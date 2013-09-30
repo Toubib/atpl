@@ -26,7 +26,7 @@ config.rb
 }
 ```
 
-2. Define some snippets
+1. Define some snippets
 
 ```
 $ cat snippet/aliases 
@@ -34,7 +34,7 @@ Alias   /css    /usr/local/share/#{project}/css
 Alias   /js     /usr/local/share/#{project}/js
 ```
 
-3. Define some vhosts using previous definitions
+1. Define some vhosts using previous definitions
 
 ```
 $ cat src/project01
@@ -54,7 +54,7 @@ $ cat src/project02
 </VirtualHost>
 ```
 
-4. Launch atpl
+1. Launch atpl
 
 ```
 $ ./atpl.rb 
@@ -64,7 +64,7 @@ $ ./atpl.rb
 ..
 ```
 
-5. Use the result in your servers
+1. Use the result in your servers
 
 ```
 $ cat generated/server01/project01 
