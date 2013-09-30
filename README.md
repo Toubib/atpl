@@ -5,7 +5,7 @@ The goal of this small ruby program is to generate dozen of apache vhost with sn
 
 Each vhost can go on many web server ( with load-balancing by example ).
 
-1. A config file with your different servers configuration and parameters
+1) A config file with your different servers configuration and parameters
 
 config.rb 
 ```ruby
@@ -26,7 +26,7 @@ config.rb
 }
 ```
 
-1. Define some snippets
+2) Define some snippets
 
 ```
 $ cat snippet/aliases 
@@ -34,7 +34,7 @@ Alias   /css    /usr/local/share/#{project}/css
 Alias   /js     /usr/local/share/#{project}/js
 ```
 
-1. Define some vhosts using previous definitions
+3) Define some vhosts using previous definitions
 
 ```
 $ cat src/project01
@@ -54,7 +54,7 @@ $ cat src/project02
 </VirtualHost>
 ```
 
-1. Launch atpl
+4) Launch atpl
 
 ```
 $ ./atpl.rb 
@@ -64,7 +64,7 @@ $ ./atpl.rb
 ..
 ```
 
-1. Use the result in your servers
+5) Use the result in your servers
 
 ```
 $ cat generated/server01/project01 
