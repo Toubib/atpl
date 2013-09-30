@@ -1,0 +1,6 @@
+#setconfig:project=anotherwebsite
+<VirtualHost #{SERVER_IP}:#{HTTP_PORT}>
+    ServerName www.#{project}.com
+    ServerAlias #{SERVER_NAME}.#{project}.com
+#{snippet:aliases}
+</VirtualHost>

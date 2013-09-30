@@ -1,0 +1,2 @@
+Alias 	/css	/usr/local/share/#{project}/css
+Alias   /js     /usr/local/share/#{project}/js
